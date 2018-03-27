@@ -3,7 +3,7 @@
     <title>Coindess</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script>
-      var timeleft = 10;
+      var timeleft = 30;
       var timer = setInterval(function() {
       	timeleft--;
         document.getElementById("countdowntimer").textContent = timeleft;
@@ -69,13 +69,23 @@
       	text-decoration: underline;
         color: white;
       }
+      
+      img {
+      	position: absolute;
+        z-index: 11;
+        top: 20px;
+        left: 20px;
+        width: 126px;
+        height: 32px;
+      }
     </style>
   </head>
   <body>
+  	<img src='https://s3-ap-southeast-1.amazonaws.com/ncoinbe/assets/cdlogo.png'></img>
     <div class="bg">
       <h3>
         <span>Our Singapore company, Digitex PTE LTD, has decided to rebrand from Coindess to Fiahub. You will be redirected after </span>
-        <span id='countdowntimer'>10</span>
+        <span id='countdowntimer'>30</span>
         <span>s.</span>
       </h3>
       <h4>
